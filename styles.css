@@ -87,15 +87,14 @@ nav div {
 
 .rightside {
     display: grid;
-    grid-template-rows: 25vh 75vh;
+    grid-template-rows: 20vh 80vh;
 }
 header {
     display: grid;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: 1fr clamp(100px, 1.3fr, 200px);
     padding: 0px 20px 0px 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
-    height: 25vh;
     z-index: 1;
 }
 
@@ -125,6 +124,41 @@ header div {
 .notifandprofile img {
     margin: 10px;
 }
+
+.headerbottom {
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+.largeprofilepic{
+    height: 50px;
+    width: 50px;
+    margin: 0px 15px 0px 25px;
+}
+.greetingwords{
+    display: grid;
+    margin: 0;
+}
+
+.hello, .helloname {
+    margin: 0px 0px 5px 0px;
+}
+
+.helloname {
+    font-size: 24px;
+}
+.headerbuttons button {
+    border-radius: 15px;
+    color: white;
+    background-color:  rgb(55, 150, 218);
+    border-style: none;
+    height: 30px;
+    width: 5.5rem;
+    margin: 1rem;
+    font-style: bold;
+}
+
 main {
     background-color: beige;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
