@@ -1,0 +1,17 @@
+.container{
+    display: grid;
+    grid-column: 20vw 80vw;
+}
+
+#anvil {
+    height: 5vh;
+    width: 5vw;
+}
+
+.dashboardlogo {
+    display: flex;
+}
+
+.dashboardlogo p {
+
+}
