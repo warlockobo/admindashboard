@@ -4,6 +4,11 @@
     src: url(static/Roboto-SemiBold.ttf);
 
 }
+body{
+    margin: 0;
+    height: 100%;
+}
+
 
 .container{
     display: grid;
@@ -13,29 +18,32 @@
 nav {
     display: flex;
     flex-direction: column;
-    background-color: rgb(55, 115, 218);
+    background-color: rgb(55, 150, 218);
     color: white;
     font-family: 'Roboto';
     font-style: bold;
-    font-size: 24px;
+    font-size: 20px;
+    padding-right: 50px;
 }
 
 nav img, header img {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     margin-right: 23px;
     margin-left: 20px;
 }
 
 #anvil {
-    height : 50px;
-    width: 50px;
+    height : 40px;
+    width: 40px;
     margin-right: 10px;
 }
+
 
 nav div {
     display: flex;
     align-items: center;
+    margin: 0px;
 }
 
 .sidebargroup1 {
@@ -44,11 +52,23 @@ nav div {
     margin-bottom: 50px;
 }
 
+.sidebargroup1 div p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebargroup2 div p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .sidebargroup2 {
     flex-direction: column;
     align-items: start;
+    margin-bottom: 20vh;
 }
 
 .dashboardlogo{
-    margin-bottom: 50px;
+    margin-bottom: auto;
+    margin: 0 0 25px 0;
 }
