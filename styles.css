@@ -1,18 +1,54 @@
+@font-face{
+    font-family: "Roboto";
+    src: url(static/Roboto-Light.ttf);
+    src: url(static/Roboto-SemiBold.ttf);
+
+}
+
 .container{
     display: grid;
-    grid-column: 20vw 80vw;
+    grid-template-columns: 1fr 7fr;
 }
 
 nav {
-    grid-column: 1fr / 5fr;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(55, 115, 218);
+    color: white;
+    font-family: 'Roboto';
+    font-style: bold;
+    font-size: 24px;
 }
 
-nav img {
-    height: 5vh;
-    width: 5vw;
+nav img, header img {
+    height: 40px;
+    width: 40px;
+    margin-right: 23px;
+    margin-left: 20px;
+}
+
+#anvil {
+    height : 50px;
+    width: 50px;
+    margin-right: 10px;
 }
 
 nav div {
     display: flex;
     align-items: center;
+}
+
+.sidebargroup1 {
+    flex-direction:column;
+    align-items: start;
+    margin-bottom: 50px;
+}
+
+.sidebargroup2 {
+    flex-direction: column;
+    align-items: start;
+}
+
+.dashboardlogo{
+    margin-bottom: 50px;
 }
