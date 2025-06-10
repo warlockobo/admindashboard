@@ -2,17 +2,26 @@
     font-family: "Roboto";
     src: url(static/Roboto-Light.ttf);
     src: url(static/Roboto-SemiBold.ttf);
-
 }
+
+html, body {
+  height: 100%; /* Set height to 100% of the viewport */
+  width: 100%;  /* Set width to 100% of the viewport */
+  margin: 0;   /* Remove default margins */
+  padding: 0;  /* Remove default padding */
+}
+
 body{
     margin: 0;
     height: 100%;
+    width: 100%;
 }
 
 
 .container{
     display: grid;
     grid-template-columns: 1fr 7fr;
+    height: 100vh;
 }
 
 nav {
@@ -23,7 +32,9 @@ nav {
     font-family: 'Roboto';
     font-style: bold;
     font-size: 20px;
-    padding-right: 50px;
+    padding-right: 70px;
+    height: 100vh;
+    margin-top: 0;
 }
 
 nav img, header img {
@@ -42,6 +53,7 @@ nav img, header img {
 
 nav div {
     display: flex;
+
     align-items: center;
     margin: 0px;
 }
@@ -65,10 +77,11 @@ nav div {
 .sidebargroup2 {
     flex-direction: column;
     align-items: start;
-    margin-bottom: 20vh;
+    margin-bottom: 100%;
 }
 
 .dashboardlogo{
-    margin-bottom: auto;
+
     margin: 0 0 25px 0;
 }
+
