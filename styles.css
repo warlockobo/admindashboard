@@ -24,7 +24,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 7fr;
-    height: 100vh;
+    height: 100%;
 }
 
 nav {
@@ -172,8 +172,9 @@ main {
 }
 
 .fillertext {
-    font-size: 12px;
+    font-size: 1rem;
     font-style: light;
+    margin-top: 0px;
 }
 
 .projectcontainer{
@@ -202,4 +203,26 @@ main {
     flex-direction: row;
     justify-content: end;
     gap: 2rem;
+}
+
+.announcetrending {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: rgb(227, 232, 255);
+    display: grid;
+    width: 18rem;
+    gap: 5rem;
+}
+.announcetrending p {
+    background-color: rgb(227, 232, 255);
+}
+
+.announced {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.trended {
+    background-color: white;
+    border-radius: 5px;
 }
